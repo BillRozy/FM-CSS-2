@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Josefin Sans", "sans-serif";
+  --font-secondary: "Alata", "sans-serif";
+  --breakpoint-mobile: 375px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1440px;
+
+  --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+
+
+  --color-gray-200: hsl(0, 0%, 85%);
+  --color-blue-100: hsl(215, 30%, 92%);
+  --color-blue-50: hsl(213, 100%, 98%);
+
+  --text-preset1-size: 72px;
+  --text-preset2-size: 48px;
+  --text-preset3-size: 40px;
+  --text-preset4-size: 32px;
+  --text-preset5-size: 24px;
+  --text-preset6-size: 15px;
+  --text-preset7-size: 14px;
+}
+
+@utility bg-hero-mobile {
+  background-image: url('./assets/mobile/image-hero.jpg');
+}
+
+@utility bg-hero-desktop {
+  background-image: url('./assets/desktop/image-hero.jpg');
+}
+
+@utility text-preset1 {
+  font-size: var(--text-preset1-size);
+  font-family: var(--font-display);
+}
+
+@utility text-preset2 {
+  font-size: var(--text-preset2-size);
+  font-family: var(--font-display);
+
+}
+
+@utility text-preset3 {
+  font-family: var(--font-display);
+  font-size: var(--text-preset3-size);
+}
+
+@utility text-preset4 {
+  font-family: var(--font-display);
+  font-size: var(--text-preset4-size);
+}
+
+@utility text-preset5 {
+  font-family: var(--font-display);
+  font-size: var(--text-preset5-size);
+}
+
+@utility text-preset6 {
+  font-family: var(--font-secondary);
+  font-size: var(--text-preset6-size);
+  line-height: 165%;
+}
+
+@utility text-preset7 {
+  font-family: var(--font-secondary);
+  font-size: var(--text-preset7-size);
+  letter-spacing: 5px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: var(--font-display);
+  line-height: 1;
+  font-weight: 300;
+  font-size: 16px;
+  background: var(--color-mainBg);
+  color: black;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
